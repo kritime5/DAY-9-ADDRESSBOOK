@@ -90,4 +90,7 @@ public class Contacts {
 
     public void editContact() {
     }
+
+    public void deleteContact() {
+    }
 }

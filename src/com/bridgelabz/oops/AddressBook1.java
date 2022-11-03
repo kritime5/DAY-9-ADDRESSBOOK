@@ -38,21 +38,24 @@ public class AddressBook1 {
         contactsArrayList.add(contacts);
         System.out.println(contacts.toString());
     }
+
     //UC3-EDIT EXISTING CONCTACT USING PERSON NAME
-    public void editContact(){
+    public void editContact() {
         System.out.println("Enter the first name you want to edit");
         boolean flag = false;
         String firstName = "Miku";
-        for (Contacts contact:contactsArrayList) {
-            if(firstName.equals(contact.getFirstName())){
+        for (Contacts contact : contactsArrayList) {
+            if (firstName.equals(contact.getFirstName())) {
                 contact.editContact();
                 System.out.println("Contact edited successfully!");
                 flag = true;
                 break;
             }
         }
-        if(flag == false){
-            System.out.println("The contact with first name : "+firstName+" is not found!");
+        if (flag == false) {
+            System.out.println("The contact with first name : " + firstName + " is not found!");
         }
+        //DELETE A PERSON USING NAME
     }
 }
+
