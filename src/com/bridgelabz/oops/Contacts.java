@@ -87,4 +87,7 @@ public class Contacts {
                 ", emailId='" + emailId + '\'' +
                 '}';
     }
+
+    public void editContact() {
+    }
 }
